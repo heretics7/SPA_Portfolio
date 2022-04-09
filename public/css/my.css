@@ -1,0 +1,202 @@
+/* reset css */
+body {
+  font-family: Noto Sans Korean;
+  line-height: 22px;
+  font-size: 14px;
+  color: #333333;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body.is-pc .ko {
+  font-size: 14px;
+}
+
+a {
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #333;
+  text-decoration: none;
+}
+
+fieldset legend {
+  display: none;
+}
+
+label {
+  margin: 0;
+  font-weight: normal;
+}
+
+label.checkbox, label.radio {
+  line-height: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+  display: block;
+}
+
+blockquote {
+  font-size: 14px;
+  margin: 0px 0px 20px;
+}
+
+.en, h1, h2, h3, h4, h5, h1 a, h2 a, h3 a, h4 a, h5 a, dl {
+  font-family: "Noto Sans Korean", sans-serif;
+  margin: 0;
+}
+
+.ko, .ko small {
+  font-family: Noto Sans Korean, sans-serif;
+}
+
+.sns-share-icon img {
+  width: 20%;
+  max-width: 34px;
+  border-radius: 50%;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Header */
+#hd {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 100vw;
+  z-index: 1;
+}
+
+#hd .navi {
+  margin: 0 5vw;
+}
+
+#hd .navi .logo {
+  max-width: 200px;
+}
+
+#hd .navi .logo img {
+  width: 100%;
+}
+
+#hd .navi .menu .gnb li {
+  margin-left: 4vw;
+}
+
+#hd .navi .menu .gnb li a {
+  font-weight: bold;
+  color: #333;
+}
+
+#hd .navi .menu .gnb li:first-child {
+  margin-left: 0;
+}
+
+#hd .navi .menu .gnb li:last-child {
+  padding: 10px 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.13);
+  background-color: #fff;
+}
+
+#hd .navi .menu .navibtn {
+  max-width: 150px;
+}
+
+#hd .navi .menu .navibtn .ham span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-top: 4px;
+  background-color: #222;
+}
+
+#hd .navi .menu .navibtn .ham span:first-child {
+  margin-top: 0;
+}
+
+#hd .navi.on .logo img {
+  content: url("/img/logowhite.svg");
+}
+
+#hd .navi.on .menu .gnb li:not(:last-child) a {
+  color: #fff;
+}
+
+#hd .navi.on .menu .navibtn .ham span {
+  background-color: #fff;
+}
+
+/* About */
+#about {
+  background-color: #ffd955;
+  height: 975px;
+}
+
+#about .tagimg {
+  top: 0;
+  left: 0;
+}
+
+#about .tagimg .tagleft {
+  -webkit-transform: translate(37vw, 400px);
+          transform: translate(37vw, 400px);
+}
+
+#about .tagimg .tagright {
+  -webkit-transform: translate(72vw, 400px);
+          transform: translate(72vw, 400px);
+}
+
+#about .mainimg {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(49vw, 75px);
+          transform: translate(49vw, 75px);
+}
+
+#about .mainimg img {
+  width: 600px;
+}
+
+#process {
+  height: 995px;
+  background: url("/img/process.png") no-repeat center;
+}
+
+#ability {
+  height: 1024px;
+  background-color: #ffd955;
+}
+
+#project {
+  height: 1140px;
+  background-color: #fff;
+}
+
+#contact {
+  height: 1024px;
+  background-color: #f5f5f5;
+}
+
+#ft {
+  height: 75px;
+  background-color: #333;
+}
