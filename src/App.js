@@ -9,7 +9,7 @@ import Footer from "./component/Footer";
 
 function App() {
   return (
-    <div>
+    <div id="portfolio">
       {/* Header */}
       <Header styletype='d1'></Header>
       {/* About */}
