@@ -23,9 +23,7 @@ function App() {
             </div>
         </div>
         <div className="m-imgbox d-lg-none position-absolute start-50 translate-middle-x">
-            <div className="">
-                <img src="/img/mainimg.png" alt="m-mainimg"/>
-            </div>
+            <img src="/img/mainimg.png" alt="m-mainimg"/>
         </div>
     </section>
     );

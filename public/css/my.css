@@ -216,8 +216,6 @@ body::-webkit-scrollbar {
 
 #hd.active #gnb .m-btn span {
   background-color: #ffd955;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 #hd.active #gnb.m-navi li a {
@@ -289,22 +287,35 @@ body::-webkit-scrollbar {
 }
 
 #about .imgbox .mainimg {
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(49vw, 75px);
-          transform: translate(49vw, 75px);
+  bottom: 0;
+  -webkit-transform: translateX(50vw);
+          transform: translateX(50vw);
 }
 
 #about .imgbox .mainimg img {
-  width: 600px;
+  width: 30vw;
 }
 
-#about .m-imgbox {
-  bottom: 0;
+@media (orientation: portrait) {
+  #about .m-imgbox {
+    bottom: 0;
+  }
+  #about .m-imgbox img {
+    width: 50vw;
+  }
 }
 
-#about .m-imgbox img {
-  width: 50vw;
+@media (orientation: landscape) {
+  #about .m-imgbox {
+    bottom: 0;
+    right: 5vw !important;
+    left: auto;
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  #about .m-imgbox img {
+    width: 30vw;
+  }
 }
 
 #process {

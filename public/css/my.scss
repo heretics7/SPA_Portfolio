@@ -152,7 +152,6 @@ body::-webkit-scrollbar {
         .m-btn{
             span{
                 background-color:#ffd955;
-                transition: 0.4s;
             };
         };
     };
@@ -222,18 +221,30 @@ body::-webkit-scrollbar {
             };
         };
         .mainimg{
-            top: 0;
-            left: 0;
-            transform: translate(49vw, 75px);
+            bottom: 0;
+            transform: translateX(50vw);
             img{
-                width: 600px;
+                width: 30vw;
             };
         };
     };
-    .m-imgbox{
-        bottom: 0;
-        img{
-            width: 50vw;
+    @media(orientation: portrait){
+        .m-imgbox{
+            bottom: 0;
+            img{
+                width: 50vw;
+            }
+        }
+    }
+    @media(orientation: landscape){
+        .m-imgbox{
+            bottom: 0;
+            right: 5vw !important;
+            left: auto;
+            transform: none !important;
+            img{
+                width: 30vw;
+            }
         }
     }
 };

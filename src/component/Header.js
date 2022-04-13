@@ -22,18 +22,18 @@ function Header() {
     }
 
     return (
-        <header id="hd" className={scrollPosition >= vh(100) && scrollPosition < 1970 ? "active" : " "}>
+        <header id="hd" className={scrollPosition >= vh(100) && scrollPosition < vh(200) ? "active" : " "}>
             <nav className="d-flex justify-content-between align-items-center">
                 <h1 className="logo">
                     <Link to="about"><a href="#none"><img src="/img/logo.svg" alt="logo"/></a></Link>
                 </h1>
-                <div id="gnb">
+                <div id="gnb" className="">
                     <div className='navi'>
                         <ul className="d-none d-lg-flex flex-column flex-lg-row justify-content-lg-center align-items-lg-center">
-                            <li><Link to="process"><a href="#none">Process</a></Link></li>
-                            <li><Link to="ability"><a href="#none">Ability</a></Link></li>
-                            <li><Link to="project"><a href="#none">Project</a></Link></li>
-                            <li><Link to="contact"><a href="#none">Contact</a></Link></li>
+                            <li><Link to="process"><a href="#none" onClick={btnclick}>Process</a></Link></li>
+                            <li><Link to="ability"><a href="#none" onClick={btnclick}>Ability</a></Link></li>
+                            <li><Link to="project"><a href="#none" onClick={btnclick}>Project</a></Link></li>
+                            <li><Link to="contact"><a href="#none" onClick={btnclick}>Contact</a></Link></li>
                             <li className="d-none d-lg-block"><a href="https://github.com/heretics7" target="_blank" className="btn_git">GitHub 바로가기</a></li>
                         </ul> 
                     </div>
