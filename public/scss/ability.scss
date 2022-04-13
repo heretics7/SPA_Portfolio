@@ -1,0 +1,36 @@
+#ability{
+    height: 1024px;
+    background-color: #ffd955;
+    .inner{
+        padding: 160px 0;
+        h3{
+            font-size: 48px;
+            font-weight: 900;
+            padding: 0 0 77px;
+        }
+        >ul{
+            padding-left: 0;
+            >li{
+                position: relative;
+                z-index: 1;
+                width: 25%;
+                padding: 70px 23px 50px;
+                border-left: 1px solid #ddd;
+                background-color: #fff;
+                div{
+                    overflow: hidden;
+                    text-align: center;
+                    p{
+                        padding: 28px 0 0;
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 1.5;
+                        color: #355f71;
+                        word-break: keep-all;
+                        height: 112px;
+                    }
+                }
+            }
+        }
+    }
+}

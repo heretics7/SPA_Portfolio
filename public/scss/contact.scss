@@ -1,0 +1,153 @@
+
+#contact{
+    height: 875px;
+    background-color: #f5f5f5;
+    .inner{
+        width: 1450px;
+        margin: 0 auto;
+        padding-top: 160px;
+        >div{
+            h2{
+                font-family: 'Noto Sans KR', sans-serif;
+                line-height: 2;
+                font-weight: 900;
+                font-size: 48px;
+            }
+        }
+        .position{
+            h2{
+                text-align: end;
+                line-height: 3;
+                font-size: 14px;
+                color: #333
+            }
+            ul{
+                overflow: hidden;
+                margin: 0;
+                li{
+                    display: block;
+                    float: left;
+                    width: calc((99.999% - (20px*3)) / 4);
+                    margin-right: 20px;
+                    padding: 0;
+                    label{
+                        cursor: pointer;
+                        position: relative;
+                        display: block;
+                        width: auto;
+                        text-align: center;
+                        height: 60px;
+                        line-height: 58px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        font-size: 16px !important;
+                        background-color: #fff;
+                        color: #3f3f3f;
+                        transition: 0.3s ease-in-out;
+                        input{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                    }
+                }
+                li.on label{
+                    border-color: #ffd955;
+                    background: #ffd955 !important;
+                    color: #000000;
+                }
+                li:last-child{
+                    margin-right: 0 !important;
+                }
+            }
+        }
+        .libox{
+            padding: 50px 0;
+            font-size: 0;
+            display: block;
+            margin-bottom: -25px !important;
+            li:nth-child(2n){
+                margin-right: 0 !important;
+            }
+            li{
+                overflow: hidden;
+                display: inline-block;
+                width: 47.5%;
+                margin-right: 4% !important;
+                font-size: 0;
+                border-bottom: 1px solid #3f3f3f;
+                padding-bottom: 10px !important;
+                margin-bottom: 25px !important;
+                transition: 0.3s ease-in-out;
+                label{
+                    min-width: 75px;
+                    font-size: 16px !important;
+                    color: #3f3f3f;
+                }
+                input{
+                    width: calc(100% - 75px) !important;
+                    border: 0 !important;
+                    background: #f5f5f5 !important;
+                    font-size: 16px !important;
+                    font-weight: 500 !important;
+                    height: 42px;
+                    line-height: 42px;
+                    border: 1px solid #333;
+                    color: #333;
+                    padding: 0 15px;
+                    display: inline-block;
+                    outline: none;
+                }
+            }
+            .agree{
+                input{
+                    width:10px;
+                    height: 44px;
+                    padding: 0 13px;
+                    color: #333;
+                    font-size: 18px;
+                    border-radius: 3px;
+                    border: 1px solid #ccc;
+                }
+            }
+        }
+        label{
+            min-width: 75px;
+            font-size: 16px !important;
+            color: #3f3f3f;
+        }
+        #messagebox{
+            #message{
+                margin-top: 15px;
+                textarea{
+                    width:  calc(100% - 44px);
+                    padding: 18px 22px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    outline: none;
+                    resize: none;
+                    background: #fff;
+                    color: #333;
+                    font-size: 16px;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+.agree{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 55px;
+    z-index: 9;
+    label{
+        font-weight: 300;
+        color: #ccc;
+        padding-left: 36px;
+        cursor: pointer;
+    }
+}

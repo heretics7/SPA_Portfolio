@@ -1,0 +1,90 @@
+#about{
+    background-color: #ffd955;
+    height: 100vh;
+    .inner{
+        .textbox{
+            height: 100%;
+            padding: 200px 0 0 15px;
+            max-width: 1480px;
+            width: 100%;
+            margin: 0 auto;
+            h3{
+                font-size: 68px;
+                font-weight: 900;
+            }
+            p{
+                width: 450px;
+                padding: 28px 0 0;
+                font-size: 18px;
+                line-height: 1.5;
+                font-weight: 600;
+                color: #2b2b2b;
+            }
+        }
+        .m-textbox{
+            padding: 100px 0 0;
+            h3{
+                font-size: 38px;
+                font-weight: 900;
+            }
+            p{
+                padding: 22px 0 0;
+                font-size: 14px;
+                line-height: 1.5;
+                font-weight: 600;
+                color: #2b2b2b;
+            }
+        }
+    }
+    .imgbox{
+        .tagimg{
+            top: 0;
+            left: 0;
+            img{
+            }
+            .tagleft{
+                transform: translate(37vw, 400px);
+            };
+            .tagright{
+                transform: translate(72vw, 400px);
+            };
+        };
+        .mainimg{
+            bottom: 0;
+            transform: translateX(50vw);
+            img{
+                width: 30vw;
+            };
+        };
+    };
+    @media(orientation: portrait){
+        .m-imgbox{
+            bottom: 0;
+            img{
+                width: 50vw;
+            }
+        }
+    }
+    @media(orientation: landscape) and (max-width:992){
+        .m-imgbox{
+            bottom: 0;
+            right: 5vw !important;
+            left: auto;
+            transform: none !important;
+            img{
+                width: 30vw;
+            }
+        }
+    }
+    @media(min-width:993){
+        .m-imgbox{
+            bottom: 0;
+            right: 5vw !important;
+            left: auto;
+            transform: none !important;
+            img{
+                width: 35vw;
+            }
+        }
+    }
+};

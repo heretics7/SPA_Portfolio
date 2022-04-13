@@ -1,0 +1,43 @@
+#project{
+    height: 1140px;
+    background-color: #fff;
+    .inner{
+        padding: 160px 0;
+        div{
+            h3{
+                font-size: 48px;
+                font-weight: 900;
+            }
+            p{
+                padding: 35px 0 0;
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: normal;
+            }
+        }
+        .swiper-container{
+            display: inline-block;
+            overflow: visible;
+            width: 32.433%;
+            margin-top: -17px;
+            border: 0;
+            vertical-align: top;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            padding: 0;
+            z-index: 1;
+            ul{
+                display: block;
+                border-bottom: 0;
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content{
+            display: inline-block;
+            width: 67.567%;
+        }
+    }
+}

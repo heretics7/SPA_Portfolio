@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* reset css */
+body { font-family:"Noto Sans KR"; line-height: 22px; font-size: 14px; color: rgb(51, 51, 51); background-color:#fff; background-repeat: no-repeat; background-attachment:fixed; background-size:cover; overflow-x: hidden;} 
+body.is-pc .ko { font-size:14px; } 
+a { color: #333; cursor: pointer; text-decoration: none; } 
+a:hover, a:focus, a:active { color: #333; text-decoration: none; } 
+fieldset legend { display:none; } 
+label { margin:0; font-weight:normal; } 
+label.checkbox, label.radio { line-height:12px; font-size: 14px; font-weight: normal; cursor: pointer; } 
+hr { margin-top: 20px; margin-bottom:20px; border:0; border-top:1px solid #eee; display:block; } 
+blockquote { font-size: 14px; margin:0px 0px 20px; } 
+.en, h1, h2, h3, h4, h5, h1 a, h2 a, h3 a, h4 a, h5 a, dl { font-family: "Noto Sans Korean", sans-serif; margin:0 } 
+.ko, .ko small { font-family:"Noto Sans KR", sans-serif; } 
+.sns-share-icon img { width:20%; max-width:34px; border-radius:50%; } 
+ul, li { margin:0; padding:0; list-style:none; } 
+
+
+/************* 스크롤바 제거 *************/
+
+body{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none; width: 0; /* Remove scrollbar space */
+    height: 0; background: transparent; /* Optional: just make scrollbar invisible */
+    -webkit-appearance: none;
+}
+
+.inner{
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* About */
+
+
+
+#ft{
+    height: 62px;
+    background-color: #333;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    p{
+        padding: 20px 0;
+    }
+}
