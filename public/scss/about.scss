@@ -60,6 +60,7 @@
 @media screen and (min-width:768px) {
     // 사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.
     .textbox{
+        text-align: left;
         height: 100%;
         padding: 10vh 0 0 15px;
         width: 100%;
@@ -78,17 +79,8 @@
         };
     };
     .imgbox{
-        .tagimg{
-            top: 0;
-            left: 0;
-            .tagleft{
-                transform: translate(37vw, 400px);
-            };
-            .tagright{
-                transform: translate(72vw, 400px);
-            };
-        };
         .mainimg{
+            left: 0;
             bottom: 0;
             transform: translateX(50vw);
             img{
@@ -135,6 +127,16 @@
         };
     };
     .imgbox{
+        .tagimg{
+            top: 0;
+            left: 0;
+            .tagleft{
+                transform: translate(37vw, 400px);
+            };
+            .tagright{
+                transform: translate(72vw, 400px);
+            };
+        };
         .mainimg{
             left: 0;
             transform: translateX(50vw);
