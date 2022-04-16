@@ -3,8 +3,8 @@ import React from 'react';
 function Project() {
     return(
         <section id='project'>
-            <div className='inner'>
-                <div>
+            <div className='container'>
+                <div data-aos='fade-up'>
                     <h3>Project</h3>
                     <p></p>
                 </div>

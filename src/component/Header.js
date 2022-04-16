@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import useWindowSize from '../hook/useWindowsize';
 import { Link } from 'react-scroll';
 
 function Header() {
+    
+    const size = useWindowSize();
 
     const vh = (v) => {
-        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        var h = Math.max(size.height, window.innerHeight || 0);
         return (v * h) / 100;
     }
+    
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const updateScroll = () => {
@@ -14,11 +18,21 @@ function Header() {
     }
     useEffect(() => {
         window.addEventListener('scroll', updateScroll);
+
+        updateScroll();
+        
+        return () => window.removeEventListener("scroll", updateScroll);
     });
 
+    const navi = document.getElementById('gnb');
+
     const btnclick = () => {
-        const navi = document.getElementById('gnb');
         navi.classList.toggle('m-navi');
+    }
+    const navclick = () => {
+        if(navi.classList.contains('m-navi')){
+            navi.classList.remove('m-navi');
+        }
     }
 
     return (
@@ -30,10 +44,10 @@ function Header() {
                 <div id="gnb" className="">
                     <div className='navi'>
                         <ul className="d-none d-lg-flex flex-column flex-lg-row justify-content-lg-center align-items-lg-center">
-                            <li><Link to="process"><a href="#none" onClick={btnclick}>Process</a></Link></li>
-                            <li><Link to="ability"><a href="#none" onClick={btnclick}>Ability</a></Link></li>
-                            <li><Link to="project"><a href="#none" onClick={btnclick}>Project</a></Link></li>
-                            <li><Link to="contact"><a href="#none" onClick={btnclick}>Contact</a></Link></li>
+                            <li><Link to="process"><a href="#none" onClick={navclick}>Process</a></Link></li>
+                            <li><Link to="ability"><a href="#none" onClick={navclick}>Ability</a></Link></li>
+                            <li><Link to="project"><a href="#none" onClick={navclick}>Project</a></Link></li>
+                            <li><Link to="contact"><a href="#none" onClick={navclick}>Contact</a></Link></li>
                             <li className="d-none d-lg-block"><a href="https://github.com/heretics7" target="_blank" className="btn_git">GitHub 바로가기</a></li>
                         </ul> 
                     </div>

@@ -3,7 +3,7 @@ import About from "./component/About";
 import Process from "./component/Process";
 import Ability from "./component/Ability";
 import Project from "./component/Project";
-// import Preinterview from "./component/Preinterview";
+//import Preinterview from "./component/Preinterview";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 
@@ -20,7 +20,7 @@ function App() {
       <Ability styletype='null'></Ability>
       {/* Project */}
       <Project styletype='null'></Project>
-      {/* <Preinterview></Preinterview> */}
+      {/*<Preinterview></Preinterview>*/}
       {/* Contact */}
       <Contact styletype='null'></Contact>
       {/* Footer */}

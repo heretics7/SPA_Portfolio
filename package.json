@@ -41,6 +41,6 @@
     "jquery": "^3.6.0",
     "react-bootstrap": "^2.2.3",
     "react-scroll": "^1.8.6",
-    "reactstrap": "^9.0.1"
+    "reactstrap": "^9.0.2"
   }
 }

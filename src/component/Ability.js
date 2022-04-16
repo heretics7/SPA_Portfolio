@@ -3,7 +3,7 @@ import React from 'react';
 function Ability() {
     return(
         <section id='ability'>
-            <div className='inner' data-aos="fade-up">
+            <div className='container' data-aos="fade-up">
                 <h3>Ability</h3>
                 <ul class="d-flex position-relative">
                     <li data-aos="fade-up" data-aos-duration="600">

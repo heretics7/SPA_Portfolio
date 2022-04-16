@@ -1,16 +1,17 @@
 #project{
     height: 1140px;
     background-color: #fff;
-    .inner{
-        padding: 160px 0;
+    .container{
+        padding-top: 80px;
         div{
+            text-align: center;
             h3{
-                font-size: 48px;
+                font-size: 2rem;
                 font-weight: 900;
             }
             p{
                 padding: 35px 0 0;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 1.5;
                 font-weight: normal;
             }

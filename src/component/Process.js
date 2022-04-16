@@ -1,8 +1,47 @@
 import React, {useEffect} from 'react';
+import useWindowSize from '../hook/useWindowsize';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
 function Process() {
+	
+	const size = useWindowSize();
+
+	const processDB = [
+		{
+			delay : 150,
+			dt : "기획 및 디자인",
+			dd : "퍼소나의 니즈와 매체 적응을 고려한 프로토타입 구상\n"+
+				"원활한 협업을 위한 소스관리와 프레임워크 및 플러그인 선정"
+		},
+		{
+			delay : 300,
+			dt : "데이터베이스 아키텍쳐",
+			dd : "프론트엔트 사후 관리에 대응된\n"+
+				"효율적인 유지보수를 위한 데이터베이스 설계"
+		},
+		{
+			delay : 450,
+			dt : "퍼블리싱",
+			dd : "퍼소나의 사용성과 빠른 유지보수를 고려한 프레임워크 선정,\n"+
+				"커스터마이징 최소화와 그에 따른 메뉴얼 작업"
+		},
+		{
+			delay : 600,
+			dt : "커스터마이징",
+			dd : "인수인계 및 유지보수 관련 메뉴얼 제작\n"+
+				"1. 리액트 컴포넌트의 속성갑으로 쉽게 변경 가능\n"+
+				"2. 주요 속성 값은 클래스 (화면 구현의 직접적인 영향)\n"+
+				"3. 협업을 위해 플러그인, 프레임워크 기본 스타일과 자바 수정 X\n"+
+				"4. 스타일의 우선순위를 위한 빠른 화면 구현"
+		},
+		{
+			delay : 750,
+			dt : "배포 및 유지보수",
+			dd : "테스트와 디버깅으로 검수 후 웹 사이트를 배포\n"+
+				"유지보수 할 수 있는 메뉴얼 배포"
+		}
+	]
 
     useEffect(() => {
         AOS.init({
@@ -12,42 +51,25 @@ function Process() {
 
     return(
         <section id='process'>
-            <div className='inner'>
+            <div className='container'>
                 <div className='text_box' data-aos="fade-up">
                     <h3>Process</h3>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>저의 웹 / 앱 제작 프로세스입니다.
+					</p>
                 </div>
-                <ul class="approach_list">
-					<li class="aos-init aos-animate active" data-aos="fade-up" data-aos-delay="100">
-						<dl>
-							<dt>Think<span class="round" data-cursor="view"></span></dt>
-							<dd>트렌드를 분석하여 변화하는 환경에서<br/>제품·서비스의 차별화 방향을 제시합니다.</dd>
-						</dl>
-					</li>
-					<li data-aos="fade-up" data-aos-delay="150" class="aos-init aos-animate">
-						<dl>
-							<dt>Tell<span class="round" data-cursor="view"></span></dt>
-							<dd>카피라이팅, 핵심 비주얼, 스토리텔링으로 제품·서비스의 차별화 요소를 생생하게 고객에게 각인시킵니다.</dd>
-						</dl>
-					</li>
-					<li data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
-						<dl>
-							<dt>Design<span class="round" data-cursor="view"></span></dt>
-							<dd>최상의 고객 경험(UX)을 설계하고, 최적화한 UI를 제공하는 웹·앱·패키지 디자인으로 웹 비지니스의 프로토타입을 제공합니다.</dd>
-						</dl>
-					</li>
-					<li data-aos="fade-up" data-aos-delay="250" class="aos-init aos-animate">
-						<dl>
-							<dt>Develop<span class="round" data-cursor="view"></span></dt>
-							<dd>O2O 플랫폼, 이커머스, 반응형 홈페이지, 네이티브 앱을 신속하고 안정적으로 제작합니다.</dd>
-						</dl>
-					</li>
-					<li data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">
-						<dl>
-							<dt>Connect<span class="round" data-cursor="view"></span></dt>
-							<dd>고객들과 더 많이 연결될 수 있도록 디지털 콘텐츠 마케팅을 지원하고, 정량적 데이터 분석에 기반한 퍼포먼스 마케팅을 제공합니다.</dd>
-						</dl>
-					</li>
+                <ul className='d-flex'>
+					{processDB.map((processArr) => {
+						return(
+							<li data-aos="fade-up" data-aos-delay={size.width >= 1024 ? processArr.delay : 100 }>
+								<dl>
+									<dt>{processArr.dt}</dt>
+									<dd>
+										{processArr.dd}
+									</dd>
+								</dl>
+							</li>
+						);
+					})}
 				</ul>
             </div>
         </section>

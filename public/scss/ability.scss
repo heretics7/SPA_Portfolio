@@ -1,15 +1,15 @@
 #ability{
     height: 1024px;
     background-color: #ffd955;
-    .inner{
-        padding: 160px 0;
+    .container{
+        padding-top: 80px;
+        text-align: center;
         h3{
-            font-size: 48px;
+            font-size: 2rem;
             font-weight: 900;
-            padding: 0 0 77px;
         }
         >ul{
-            padding-left: 0;
+            padding: 60px 0 0;
             >li{
                 position: relative;
                 z-index: 1;
