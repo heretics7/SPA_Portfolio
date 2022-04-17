@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import useWindowSize from '../hook/useWindowsize';
 
 function Process() {
@@ -7,25 +7,25 @@ function Process() {
 
 	const processDB = [
 		{
-			delay : 1000,
+			delay : 500,
 			dt : "기획 및 디자인",
 			dd : "퍼소나의 니즈와 매체 적응을 고려한 프로토타입 구상\n"+
 				"원활한 협업을 위한 소스관리와 프레임워크 및 플러그인 선정"
 		},
 		{
-			delay : 1500,
+			delay : 800,
 			dt : "데이터베이스 아키텍쳐",
 			dd : "프론트엔트 사후 관리에 대응된\n"+
 				"효율적인 유지보수를 위한 데이터베이스 설계"
 		},
 		{
-			delay : 2000,
+			delay : 1100,
 			dt : "퍼블리싱",
 			dd : "퍼소나의 사용성과 빠른 유지보수를 고려한 프레임워크 선정,\n"+
 				"커스터마이징 최소화와 그에 따른 메뉴얼 작업"
 		},
 		{
-			delay : 2500,
+			delay : 1400,
 			dt : "커스터마이징",
 			dd : "인수인계 및 유지보수 관련 메뉴얼 제작\n"+
 				"1. 리액트 컴포넌트의 속성갑으로 쉽게 변경 가능\n"+
@@ -34,7 +34,7 @@ function Process() {
 				"4. 스타일의 우선순위를 위한 빠른 화면 구현"
 		},
 		{
-			delay : 3000,
+			delay : 1700,
 			dt : "배포 및 유지보수",
 			dd : "테스트와 디버깅으로 검수 후 웹 사이트를 배포\n"+
 				"유지보수 할 수 있는 메뉴얼 배포"
