@@ -1,7 +1,7 @@
 import Header from "./component/Header";
-import About from "./component/About";
+import Main from "./component/Main";
 import Process from "./component/Process";
-import Ability from "./component/Ability";
+import About from "./component/About";
 import Project from "./component/Project";
 //import Preinterview from "./component/Preinterview";
 import Contact from "./component/Contact";
@@ -13,11 +13,11 @@ function App() {
       {/* Header */}
       <Header styletype='d1'></Header>
       {/* About */}
-      <About styletype='tag'></About>
+      <Main styletype='tag'></Main>
+      {/* Ability */}
+      <About styletype='null'></About>
       {/* Process */}
       <Process styletype='black'></Process>
-      {/* Ability */}
-      <Ability styletype='null'></Ability>
       {/* Project */}
       <Project styletype='null'></Project>
       {/*<Preinterview></Preinterview>*/}

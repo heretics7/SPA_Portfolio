@@ -1,44 +1,40 @@
 #project{
-    height: 1140px;
     background-color: #fff;
-    .container{
-        padding-top: 80px;
-        div{
+    .projectbox{
+        .projectimg{
+            background-image: url("/img/portfolio.png");
+            background-position: center;
+            background-size: cover;
+            padding-bottom: 50%;
+        }
+        .projecttext{
             text-align: center;
-            h3{
-                font-size: 2rem;
-                font-weight: 900;
+            h5{
+                padding: 20px 0 12px;
             }
-            p{
-                padding: 35px 0 0;
+            span{
+                display: inline-block;
+                margin-left: 6px;
+                margin-bottom: 6px;
+                padding: 4px 8px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                color: #666;
                 font-size: 14px;
-                line-height: 1.5;
-                font-weight: normal;
             }
-        }
-        .swiper-container{
-            display: inline-block;
-            overflow: visible;
-            width: 32.433%;
-            margin-top: -17px;
-            border: 0;
-            vertical-align: top;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            padding: 0;
-            z-index: 1;
-            ul{
-                display: block;
-                border-bottom: 0;
-                position: relative;
-                width: 100%;
-                height: 100%;
+            .plan{
+                a{
+                    border: 1px solid #355f71;
+                    border-radius: 18px;
+                    font-size: 12px;
+                    color: #355f71;
+                    display: block;
+                    width: 125px;
+                    height: 35px;
+                    margin: 0 auto;
+                    line-height: 33px;
+                }
             }
-        }
-        .content{
-            display: inline-block;
-            width: 67.567%;
         }
     }
 }

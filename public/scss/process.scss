@@ -1,130 +1,36 @@
-/* All Device */
-// 모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.
 #process{
-    background: url("/img/processimg.jpg") no-repeat center;
-    color: #fff;
-    .container{
-        .text_box{
-            h3{
-                font-size: 2rem;
-                font-weight: 900;
-            }
-            p{
-                padding: 35px 0 0;
-                font-size: 16px;
-                line-height: 1.5;
-                font-weight: normal;
-            }
-        }
-        ul{
-            padding: 60px 0 0;
-            flex-direction: column;
-            justify-content: center;
-            li{
-                dl{
-                    dt{
-                        font-size: 21px;
-                        margin-bottom: 1rem;
-                    }
-                    dd{
-                        font-size: 14px;
-                        margin-bottom: 2.5rem;
-                        white-space: pre-wrap;
-                    }
-                }
-            }
+    background-image: url("/img/blackforest5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    .col-lg:last-child .gap-sm{
+        display: none;
+    }
+    .process{
+        overflow: hidden;
+        h5{
+            margin-bottom: 0.9375rem;
         }
     }
 }
-
-/* Mobile Device : Portrait */
-// 480px 미만 해상도의 모바일 기기를 위한 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨. 
-#process{
-    background: url("/img/processimg-480.jpg") no-repeat center;
-    height: 150vh;
-    .container{
-        padding-top: 80px;
-        .text_box{
-            text-align: center;
-            h3{
-                font-size: 2rem;
-                font-weight: 900;
-            }
-            p{
-                padding: 35px 0 0;
-                font-size: 14px;
-                line-height: 1.5;
-                font-weight: normal;
-            }
-        }
-        ul{
-            text-align: left;
-        }
-    }
-}
-
-/* Mobile Device : Landscape */
-@media screen and ( min-width : 480px ) and ( max-width : 767px ) {
+@media screen and (min-width:992px) {
     #process{
-        background: url("/img/processimg-landscape.jpg") no-repeat center;
-        height: 285vh;
-    }
-}
-/* Tablet & Desktop Device */
-@media screen and (min-width:768px) {
-    // 사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.
-    #process{
-        background: url("/img/processimg.jpg") no-repeat center;
+        background-image: url("/img/blackforest4.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 100vh;
     }
 }
-/* Tablet Device */
-@media screen and (min-width:768px) and (max-width:1023px) {
-    // 사용자 해상도가 768px 이상이고 1023px 이하일 때 이 코드가 실행됨. 아이패드 또는 비교적 작은 해상도의 랩탑이나 데스크톱에 대응하는 코드를 작성한다.
+@media screen and (min-width:1200px) {
     #process{
-        height: 200vh;
-    }
-}
-
-/* Desktop Device */
-@media screen and (min-width:1024px) {
-    // 사용자 해상도가 1024px 이상일 때 이 코드가 실행됨. 1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다.
-    #process{
-        background: url("/img/processimg.jpg") no-repeat center;
-        height: 1024px;
-        .container{
-            padding-top: 160px;
-            .text_box{
-                h3{
-                    font-size: 48px;
-                    font-weight: 900;
-                }
-                p{
-                    padding: 35px 0 0;
-                    font-size: 16px;
-                    line-height: 1.5;
-                    font-weight: normal;
-                }
-            }
-            ul{
-                text-align: center;
-                padding: 110px 0 0;
-                flex-direction: row;
-                justify-content: center;
-                li{
-                    width: 20%;
-                    dl{
-                        padding: 80px 0 0;
-                        dt{
-                            font-size: 21px;
-                            margin-bottom: 1rem;
-                        }
-                        dd{
-                            font-size: 14px;
-                            margin-bottom: 2.5rem;
-                        }
-                    }
-                }
+        height: 110vh;
+        .vertical-align{
+            .content{
+                align-items: flex-start;
             }
         }
     }

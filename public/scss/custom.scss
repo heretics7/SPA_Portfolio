@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* reset css */
+body { font-family:"Pretendard", "Noto Sans Korean", sans-serif; line-height: 22px; font-size: 14px; color: rgb(51, 51, 51); background-color:#fff; background-repeat: no-repeat; background-attachment:fixed; background-size:cover; overflow-x: hidden;} 
+body.is-pc .ko { font-size:14px; } 
+a { color: #333; cursor: pointer; text-decoration: none; } 
+a:hover, a:focus, a:active { color: #333; text-decoration: none; } 
+fieldset legend { display:none; } 
+label { margin:0; font-weight:normal; } 
+label.checkbox, label.radio { line-height:12px; font-size: 14px; font-weight: normal; cursor: pointer; } 
+hr { margin-top: 20px; margin-bottom:20px; border:0; border-top:1px solid #eee; display:block; } 
+blockquote { font-size: 14px; margin:0px 0px 20px; } 
+.en, h1, h2, h3, h4, h5, h1 a, h2 a, h3 a, h4 a, h5 a, dl { font-family: "Pretendard", sans-serif; margin:0 } 
+.ko, .ko small { font-family:"Pretendard", "Noto Sans Korean", sans-serif } 
+.sns-share-icon img { width:20%; max-width:34px; border-radius:50%; } 
+ul, li { margin:0; padding:0; list-style:none; } 
+
+
+/************* 스크롤바 제거 *************/
+
+body{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none; width: 0; /* Remove scrollbar space */
+    height: 0; background: transparent; /* Optional: just make scrollbar invisible */
+    -webkit-appearance: none;
+}
+
+/* custom */
+
+html {
+    font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+}
+body {
+    font-family: var(--pf);
+    font-size: 1rem;
+    line-height: 1.7;
+    min-width: 20rem;
+    margin: 0;
+    padding: 0;
+    color: #5c5c5c;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    margin: 0 0 1.875rem;
+}
+p:empty {
+    display: none;
+}
+p:last-of-type {
+    margin-bottom: 0;
+}
+strong {
+    font-weight: 600;
+}
+mark {
+    background-color: var(--p1);
+}
+a {
+    -webkit-transition: all 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    transition: all 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    text-decoration: none;
+    color: inherit;
+}
+a:active,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+a:hover {
+    color: var(--p1);
+}
+.h1,
+h1 {
+    font-family: "Noto Sans Korean", "Pretendard", sans-serif;
+    font-size: 4rem;
+    line-height: 1.15;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    color: #34323f;
+    letter-spacing: -0.05rem;
+}
+@media only screen and (max-width: 575px) {
+    .h1,
+    h1 {
+        font-size: 2.375rem;
+    }
+}
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: #34323f;
+    letter-spacing: -0.05rem;
+}
+.h2,
+h2 {
+    font-family: "Noto Sans Korean", "Pretendard", sans-serif;
+    font-size: 3rem;
+    line-height: 1.4;
+}
+.h3,
+h3 {
+    font-family: "Noto Sans Korean", "Pretendard", sans-serif;
+    font-size: 3rem;
+    line-height: 1.4;
+}
+.h4,
+h4 {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+.h5,
+h5 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+.h6,
+h6 {
+    font-size: 1.375rem;
+    line-height: 1.55;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    
+    font-family: 'Pretendard';
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.vertical-align{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    flex: 1 1 auto;
+    align-items: flex-start;
+}
+
+.gap{
+    height: 4.375rem;
+}
+.gap-sm{
+    height: 2.5rem;
+}
+
+#ft{
+    height: 7vh;
+    background-color: #333;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+}

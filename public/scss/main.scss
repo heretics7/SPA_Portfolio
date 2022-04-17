@@ -1,0 +1,93 @@
+/* All Device */
+// 모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.
+
+#main{
+    background-color: #ffd955;
+    height: 100vh;
+}
+
+/* Mobile Device : Portrait */
+.imgbox{
+    .mainimg{
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        img{
+            width: 50vw;
+        };
+    };
+};
+
+@media screen and ( max-width : 479px ) {
+    .content{
+        text-align: center;
+    }
+}
+/* Mobile Device : Landscape */
+@media screen and ( min-width : 480px ) and ( max-width : 767px ) {
+    #main{
+        height: fit-content;
+    };
+    .imgbox{
+        .mainimg{
+            bottom: 0;
+            right: 5vw !important;
+            left: auto;
+            transform: none !important;
+            img{
+                width: 30vw;
+            };
+        };
+    };
+};
+/* Tablet & Desktop Device */
+@media screen and (min-width:768px) {
+    // 사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.
+    .imgbox{
+        .tagimg{
+            top: 0;
+            left: 0;
+            .tagleft{
+                transform: translate(37vw, 400px);
+            };
+            .tagright{
+                transform: translate(72vw, 400px);
+            };
+        };
+        .mainimg{
+            bottom: 0;
+            transform: translateX(50vw);
+            img{
+                width: 30vw;
+            };
+        };
+    };
+};
+/* Tablet Device */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    // 사용자 해상도가 768px 이상이고 1023px 이하일 때 이 코드가 실행됨. 아이패드 또는 비교적 작은 해상도의 랩탑이나 데스크톱에 대응하는 코드를 작성한다.
+    .imgbox{
+        .mainimg{
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            img{
+                width: 40vw;
+            };
+        };
+    };
+};
+
+/* Desktop Device */
+@media screen and (min-width:1024px) {
+    // 사용자 해상도가 1024px 이상일 때 이 코드가 실행됨. 1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다.
+    .imgbox{
+        .mainimg{
+            left: 0;
+            transform: translateX(50vw);
+            img{
+                max-width: 600px;
+            };
+        };
+    };
+};
