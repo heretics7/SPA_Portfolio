@@ -4,6 +4,7 @@ import Process from "./component/Process";
 import About from "./component/About";
 import Project from "./component/Project";
 //import Preinterview from "./component/Preinterview";
+import Swiper from "./component/Swiper";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 
@@ -21,6 +22,7 @@ function App() {
       {/* Project */}
       <Project styletype='null'></Project>
       {/*<Preinterview></Preinterview>*/}
+      <Swiper></Swiper>
       {/* Contact */}
       <Contact styletype='null'></Contact>
       {/* Footer */}
