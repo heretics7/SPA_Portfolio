@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="portfolioSQL">
+
+    <!-- reactportfolio.contact SQL -->
+
+    <select id="portfolioList">
+        select
+            *
+        from reactportfolio.contact
+        order by keyno desc
+    </select>
+    <insert id="portfolioInsert">
+        insert into 
+            reactportfolio.contact (
+                company
+                , position
+                , contacthp
+                , message
+                , name
+                , email
+            )
+            values (
+                #{wr_company}
+                ,  #{wr_position}
+                ,  #{wr_hp}
+                ,  #{wr_message}
+                ,  #{wr_name}
+                ,  #{wr_email}
+            )
+    </insert>
+    <!-- <update id="interviewModify">
+        update
+            reactinterview.interview (
+                wr_a              
+                , wr_q
+            )
+            set (
+                #{wr_subject}
+                ,  #{wr_content}
+            )
+            where
+                wr_id = #{no}
+    </update>
+    <delete id="interviewDelete">
+        delete from
+            reactinterview.interview
+        where 
+            wr_id = #{no}
+    </delete>  -->
+
+    <!-- reactportfolio.skill SQL -->
+
+    <select id="skillList">
+        select
+            *
+        from reactportfolio.skill
+        order by skill_no desc
+    </select>
+
+    <!-- reactportfolio.process SQL -->
+
+    <select id="processList">
+        select
+            *
+        from reactportfolio.process
+        order by 000 desc
+    </select>
+</mapper>
