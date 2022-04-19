@@ -81,6 +81,9 @@
 /* Desktop Device */
 @media screen and (min-width:1024px) {
     // 사용자 해상도가 1024px 이상일 때 이 코드가 실행됨. 1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다.
+    .textbox{
+        padding-top: 10rem;
+    }
     .imgbox{
         .mainimg{
             left: 0;

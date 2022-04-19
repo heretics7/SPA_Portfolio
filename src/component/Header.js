@@ -45,7 +45,7 @@ function Header() {
                         <ul className="d-none d-lg-flex flex-column flex-lg-row justify-content-lg-center align-items-lg-center">
                             <li><Link to="about"><a href="#none" onClick={navclick}>About</a></Link></li>
                             <li><Link to="process"><a href="#none" onClick={navclick}>Process</a></Link></li>
-                            <li><Link to="project"><a href="#none" onClick={navclick}>Project</a></Link></li>
+                            <li><Link to="swiper"><a href="#none" onClick={navclick}>Project</a></Link></li>
                             <li><Link to="contact"><a href="#none" onClick={navclick}>Contact</a></Link></li>
                             <li className="d-none d-lg-block"><a href="https://github.com/heretics7" target="_blank" className="btn_git">GitHub 바로가기</a></li>
                         </ul> 
