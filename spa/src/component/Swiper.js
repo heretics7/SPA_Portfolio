@@ -1,16 +1,9 @@
-// App.jsx
 import React from "react";
-// Direct React component imports
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import { Pagination, EffectFade } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-
-
-// import required modules
-import { Pagination, EffectFade } from "swiper";
 
 export default function App() {
 

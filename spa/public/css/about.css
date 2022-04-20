@@ -1,0 +1,19 @@
+#about {
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+#about h4 {
+  padding-bottom: 1rem;
+}
+
+#about .introduce p span {
+  text-indent: 1rem;
+  display: block;
+}
+
+#about .skill li > img {
+  display: block;
+  width: 100%;
+}

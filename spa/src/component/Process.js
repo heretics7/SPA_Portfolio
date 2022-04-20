@@ -50,7 +50,7 @@ function Process() {
                             <div className="col-12">
                                 <div data-aos="fade-up">
                                     <h3 className='text-light'>Process</h3>
-                                    <p className='text-light'>쏼라쏼라</p>
+                                    <p className='text-light'>저의 작업 프로세스입니다.</p>
                                 </div>
                                 <div className="gap"></div>
                                 <div className="row row-cols-1 row-cols-lg-5">
