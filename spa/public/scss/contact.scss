@@ -1,6 +1,6 @@
 
 #contact{
-    height: 875px;
+    height: 100%;
     background-color: #f5f5f5;
     .position{
         h6{
@@ -89,17 +89,6 @@
                 outline: none;
             }
         }
-        .agree{
-            input{
-                width:10px;
-                height: 44px;
-                padding: 0 13px;
-                color: #333;
-                font-size: 18px;
-                border-radius: 3px;
-                border: 1px solid #ccc;
-            }
-        }
     }
     label{
         min-width: 75px;
@@ -107,10 +96,10 @@
         color: #3f3f3f;
     }
     #messagebox{
-        #message{
+        #wr_message{
             margin-top: 15px;
             textarea{
-                width:  calc(100% - 44px);
+                width: 100%;
                 padding: 18px 22px;
                 border: 1px solid #ddd;
                 border-radius: 5px;
@@ -122,19 +111,31 @@
                 box-shadow: none;
             }
         }
-    }
-}
-.agree{
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 55px;
-    z-index: 9;
-    label{
-        font-weight: 300;
-        color: #ccc;
-        padding-left: 36px;
-        cursor: pointer;
+        .agree{
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 55px;
+            z-index: 9;
+            label{
+                font-weight: 300;
+                padding-left: 36px;
+                cursor: pointer;
+            }
+        }
+        .submit{
+            display: block;
+            width: 240px;
+            height: 60px;
+            margin-top: 35px;
+            margin-left: auto;
+            padding: 0;
+            border: 0;
+            line-height: 60px;
+            font-size: 16px;
+            color: #2b2b2b;
+            background-color: #ffd955;
+        }
     }
 }

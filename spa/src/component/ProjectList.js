@@ -47,7 +47,7 @@ class About extends Component {
         const pagination = {
             clickable: true,
             renderBullet: function (index, className) {
-            return('<span data-aos=\"fade-right\" data-aos-delay=\"' +  (this.state.projectData[index].delay) + '\"' + 'class="' + className + '">' + '<a href="#none">' + (this.state.projectData[index].name) + '</a>' + "</span>");
+            return('<span data-aos=\"fade-right\" data-aos-delay=\"' +  (this.state.projectData[index].delay) + '\"' + 'className="' + className + '">' + '<a href="#none">' + (this.state.projectData[index].name) + '</a>' + "</span>");
             },
         };
         

@@ -26,44 +26,44 @@ function Contact() {
                                     <div className="position" data-aos="fade-up">
                                         <h6>* 포지션을 선택해주세요.</h6>
                                         <ul>
-                                            <li><label for="frontend" class="hope"><input type="radio" name="position" id="frontend" value="f"/>프론트엔드</label></li>
-                                            <li><label for="publisher" class="hope"><input type="radio" name="position" id="publisher" value="p"/>퍼블리셔</label></li>
-                                            <li><label for="backend" class="hope"><input type="radio" name="position" id="backend" value="b"/>기획 / 마케팅</label></li>
-                                            <li><label for="planner" class="hope"><input type="radio" name="position" id="planner" value="n"/>디자인</label></li>
+                                            <li><label htmlFor="frontend" className="hope"><input type="radio" name="position" id="frontend" value="f"/>프론트엔드</label></li>
+                                            <li><label htmlFor="publisher" className="hope"><input type="radio" name="position" id="publisher" value="p"/>퍼블리셔</label></li>
+                                            <li><label htmlFor="backend" className="hope"><input type="radio" name="position" id="backend" value="b"/>기획 / 마케팅</label></li>
+                                            <li><label htmlFor="planner" className="hope"><input type="radio" name="position" id="planner" value="n"/>디자인</label></li>
                                         </ul>
                                     </div>
                                     <div>
-                                        <ul class="libox" data-aos="fade-up">
+                                        <ul className="libox" data-aos="fade-up">
                                             <li>
-                                                <label for="company">기업명</label>
+                                                <label htmlFor="company">기업명</label>
                                                 <input type="text" name="company" id="company"/>
                                             </li>
                                             <li>
-                                                <label for="name">성함</label>
+                                                <label htmlFor="name">성함</label>
                                                 <input type="text" name="name" id="name"/>
                                             </li>
                                             <li>
-                                                <label for="email">이메일</label>
+                                                <label htmlFor="email">이메일</label>
                                                 <input type="text" name="email" id="email"/>
                                             </li>
                                             <li>
-                                                <label for="contacthp">연락처</label>
+                                                <label htmlFor="contacthp">연락처</label>
                                                 <input type="text" name="contacthp" id="contacthp"/>
                                             </li>
                                         </ul>
                                     </div>
                                     <div id="messagebox" data-aos="fade-up">
-                                        <label for="message">메세지</label>
+                                        <label htmlFor="message">메세지</label>
                                         <div id="message">
                                             <textarea name="message" rows="3"></textarea>
                                         </div>
                                         <div className="d-flex">
-                                            <div class="agree">
+                                            <div className="agree">
                                                 <input type="checkbox" id="agreeTerm"/>
-                                                <label for="agree">개인정보 수집이용 동의</label>
+                                                <label htmlFor="agree">개인정보 수집이용 동의</label>
                                             </div>
-                                            <div class="submit">
-                                                <label for="submit">보내기</label>
+                                            <div className="submit">
+                                                <label htmlFor="submit">보내기</label>
                                                 <input type="submit" id="submit" />
                                             </div>
                                         </div>

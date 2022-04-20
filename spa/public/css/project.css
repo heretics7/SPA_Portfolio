@@ -1,0 +1,41 @@
+#project {
+  background-color: #fff;
+}
+
+#project .projectbox .projectimg {
+  background-image: url("/img/portfolio.png");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 50%;
+}
+
+#project .projectbox .projecttext {
+  text-align: center;
+}
+
+#project .projectbox .projecttext h5 {
+  padding: 20px 0 12px;
+}
+
+#project .projectbox .projecttext span {
+  display: inline-block;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #666;
+  font-size: 14px;
+}
+
+#project .projectbox .projecttext .plan a {
+  border: 1px solid #355f71;
+  border-radius: 18px;
+  font-size: 12px;
+  color: #355f71;
+  display: block;
+  width: 125px;
+  height: 35px;
+  margin: 0 auto;
+  line-height: 33px;
+}

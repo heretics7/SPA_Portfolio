@@ -1,0 +1,40 @@
+#process {
+  background-image: url("/img/blackforest5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+#process .col-lg:last-child .gap-sm {
+  display: none;
+}
+
+#process .process {
+  overflow: hidden;
+}
+
+#process .process h5 {
+  margin-bottom: 0.9375rem;
+}
+
+@media screen and (min-width: 992px) {
+  #process {
+    background-image: url("/img/blackforest4.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #process {
+    height: 110vh;
+  }
+  #process .vertical-align .content {
+    align-items: flex-start;
+  }
+}

@@ -5,9 +5,9 @@ import About from "./component/About";
 import ProcessList from "./component/ProcessList";
 //import ProjectList from "./component/ProjectList";
 import Swiper from "./component/Swiper";
-import ContactList from "./component/ContactList";
+// import ContactList from "./component/ContactList";
 import ContactInsert from "./component/ContactInsert";
-import Footer from "./component/Footer";
+// import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -41,6 +41,7 @@ function App() {
       </ProjectList>
       */}
       <Swiper></Swiper>
+      {/*       
       <ContactList dbinfo={ {         
         titlenm : '아마존 Contact 목록', 
         botable : 'contactList',
@@ -49,6 +50,7 @@ function App() {
         mapperid : 'portfolioList'
         }}>
       </ContactList>
+      */}
       <Routes>
         <Route path='/' element={
           <ContactInsert dbinfo={{
@@ -61,7 +63,7 @@ function App() {
           </ContactInsert>}>
         </Route>
       </Routes>
-      <Footer styletype='family'></Footer>
+      {/* <Footer styletype='family'></Footer> */}
     </div>
   );
 }

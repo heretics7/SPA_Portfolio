@@ -39,7 +39,8 @@ function InsertContact(props){
                 setMessage("이메일을 입력해주세요");       
                 return false;
             }
-            return true;
+            e.preventDefault();
+            // return true;
         }
 
         if( fnValidate() ){       
@@ -102,35 +103,38 @@ function InsertContact(props){
                         <div className="row">
                             <div className="col-12">
                                 <div data-aos="fade-up">
-                                    <h2>{props.dbinfo.titlenm}</h2>
+                                    <h3>{props.dbinfo.titlenm}</h3>
+                                    <div className="gap-sm"></div>
                                 </div>
-                                <form action="" method="post" name={props.dbinfo.botable}>
-                                    <input type='hidden' name='crud' value={props.dbinfo.crud} />
-                                    <input type='hidden' name='mapper' value={props.dbinfo.mapper} />
-                                    <input type='hidden' name='mapperid' value={props.dbinfo.mapperid} />
-                                    <div class="position">
+                                <form action="" method="post" name={props.dbinfo.botable} data-aos="fade-up" data-aos-delay="500">
+                                    <div className="d-none">
+                                        <input type='hidden' name='crud' value={props.dbinfo.crud} />
+                                        <input type='hidden' name='mapper' value={props.dbinfo.mapper} />
+                                        <input type='hidden' name='mapperid' value={props.dbinfo.mapperid} />
+                                    </div>
+                                    <div className="position">
                                         <h6>* 포지션을 선택해주세요.</h6>
                                         <ul>
                                             <li>
-                                                <label for="frontend" class="hope">
+                                                <label htmlFor="frontend" className="hope">
                                                     <input type="radio" name="wr_position" id="frontend" value="frontend"/>
                                                     프론트엔드
                                                 </label>
                                             </li>
                                             <li>
-                                                <label for="publisher" class="hope">
+                                                <label htmlFor="publisher" className="hope">
                                                     <input type="radio" name="wr_position" id="publisher" value="publisher"/>
                                                     퍼블리셔
                                                 </label>
                                             </li>
                                             <li>
-                                                <label for="planner" class="hope">
+                                                <label htmlFor="planner" className="hope">
                                                     <input type="radio" name="wr_position" id="planner" value="planner"/>
                                                     기획 / 마케팅
                                                 </label>
                                             </li>
                                             <li>
-                                                <label for="design" class="hope">
+                                                <label htmlFor="design" className="hope">
                                                     <input type="radio" name="wr_position" id="design" value="design"/>
                                                     디자인
                                                 </label>
@@ -138,43 +142,39 @@ function InsertContact(props){
                                         </ul>
                                     </div>
                                     <div>
-                                        <ul class="libox">
+                                        <ul className="libox">
                                             <li>
-                                                <label for="wr_company">기업명</label>
+                                                <label htmlFor="wr_company">기업명</label>
                                                 <input type="text" name="wr_company" id="wr_company"/>
                                             </li>
                                             <li>
-                                                <label for="wr_name">성함</label>
+                                                <label htmlFor="wr_name">성함</label>
                                                 <input type="text" name="wr_name" id="wr_name"/>
                                             </li>
                                             <li>
-                                                <label for="wr_email">이메일</label>
+                                                <label htmlFor="wr_email">이메일</label>
                                                 <input type="text" name="wr_email" id="wr_email"/>
                                             </li>
                                             <li>
-                                                <label for="wr_hp">연락처</label>
+                                                <label htmlFor="wr_hp">연락처</label>
                                                 <input type="text" name="wr_hp" id="wr_hp"/>
                                             </li>
                                         </ul>
                                     </div>
                                     <div id="messagebox">
-                                        <label for="wr_message">메세지</label>
+                                        <label htmlFor="wr_message">메세지</label>
                                         <div id="wr_message">
                                             <textarea name="wr_message" rows="3"></textarea>
                                         </div>
                                         <div className="row">
-                                            <div class="agree">
+                                            <div className="agree">
                                                 <input type="checkbox" id="agreeTerm"/>{" "}
-                                                <label for="agreeTerm">개인정보 수집이용 동의</label>
+                                                <label htmlFor="agreeTerm">개인정보 수집이용 동의</label>
                                             </div>
-                                            <div class="submit">
-                                                <label for="submit">보내기</label>
-                                                <input type="submit" id="submit" onClick={e => { submitContact(props.dbinfo.botable, e) }}/>
-                                            </div>
+                                            <button type="submit" className="submit" onClick={e => { submitContact(props.dbinfo.botable, e) }}>보내기</button>
                                         </div>
                                     </div>
                                 </form>
-                                <p>{ message }</p>
                             </div>
                         </div>
                     </div>

@@ -41,7 +41,7 @@ export default function App() {
     const pagination = {
         clickable: true,
         renderBullet: function (index, className) {
-        return('<span data-aos=\"fade-right\" data-aos-delay=\"' +  (projectDB[index].delay) + '\"' + 'class="' + className + '">' + '<a href="#none">' + (projectDB[index].name) + '</a>' + "</span>");
+        return('<span data-aos=\"fade-right\" data-aos-delay=\"' +  (projectDB[index].delay) + '\"' + 'className="' + className + '">' + '<a href="#none">' + (projectDB[index].name) + '</a>' + "</span>");
         },
     };
 
